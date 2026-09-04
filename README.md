@@ -463,7 +463,7 @@ The broader flagship roadmap includes several engineering layers.
 
 - API layer where architecturally justified
 - durable persistence where justified
-- Docker / CI
+- Docker / containerized deployment
 - integration and evaluation testing
 - observability appropriate to the final runtime
 
@@ -525,5 +525,8 @@ Related portfolio areas include:
 - full-stack AI products
 - workflow reliability and systems engineering
 
-**GitHub:** [chaitanyaAI-careers](https://github.com/chaitanyaAI-careers)
-**LinkedIn:** [linkedin.com/in/chaitanyaai-careers](https://www.linkedin.com/in/chaitanyaai-careers/)
+**Chaitanya Sai — Applied AI Engineer**
+
+Generative AI · LLMs · RAG · Agentic AI · AI Platform & Backend Engineering
+
+[Portfolio](https://chaitanya-sai-portfolio.vercel.app) · [GitHub](https://github.com/chaitanyaAI-careers) · [LinkedIn](https://www.linkedin.com/in/chaitanyaai-careers/)
