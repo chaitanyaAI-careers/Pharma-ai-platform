@@ -1,3 +1,5 @@
+![Project header](docs/branding/readme-header.png)
+
 # Pharma AI Platform
 
 ### Regulated Document Intelligence · Grounded Answers · Structured Summaries · Human Review
