@@ -37,19 +37,7 @@ Pharma AI Platform treats **grounding, traceability, review, and structured outp
 
 The current public repository focuses on small, deterministic contracts that sit between AI/retrieval components and downstream application or review workflows.
 
-```mermaid
-flowchart LR
-    A["Retrieved Evidence<br/>source_id · chunk_id · excerpt"] --> B["Citation Formatting"]
-    B --> C["Grounded Answer Contract"]
-    C --> D["Answer + Unique Citations"]
-
-    E["Document Summary Inputs"] --> F["Summary Contract"]
-    F --> G["Title · Highlights · Trace ID"]
-
-    H["Review Item<br/>PENDING"] --> I{"Reviewer Decision"}
-    I -->|"Approve"| J["APPROVED"]
-    I -->|"Reject"| K["REJECTED"]
-```
+![Pharma AI Platform evidence-aware architecture](docs/architecture/pharma-ai-platform-architecture.png)
 
 This public layer demonstrates how outputs can be made **structured, traceable, and reviewable** without publishing the complete underlying document-intelligence implementation.
 
