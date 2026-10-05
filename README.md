@@ -39,7 +39,7 @@ Pharma AI Platform treats **grounding, traceability, review, and structured outp
 
 The current public repository focuses on small, deterministic contracts that sit between AI/retrieval components and downstream application or review workflows.
 
-![Pharma AI Platform evidence-aware architecture](docs/architecture/pharma-ai-platform-architecture.png)
+![Pharma AI Platform evidence-aware architecture](docs/architecture/pharma-ai-platform-architecture.svg)
 
 This public layer demonstrates how outputs can be made **structured, traceable, and reviewable** without publishing the complete underlying document-intelligence implementation.
 
