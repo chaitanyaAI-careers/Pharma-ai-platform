@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="100%" height="100%" font-family="Arial, Helvetica, sans-serif">
+<title>Pharma AI Platform — evidence-aware architecture</title>
+<desc>Public grounding and review contracts are separated from the verified broader private hybrid retrieval, reranking, generation, observability, and benchmark implementation.</desc>
+<rect width="1200" height="700" fill="#080b12"/>
+<text x="48" y="58" font-size="28" font-weight="700" fill="#f4f8ff">Pharma AI Platform</text>
+<text x="48" y="84" font-size="15" fill="#9fb0c8">Hybrid RAG · grounded outputs · human review · measurable retrieval</text>
+<line x1="48" y1="104" x2="1152" y2="104" stroke="#24324a"/>
+<text x="48" y="140" font-size="13" font-weight="700" fill="#77f0e6">PUBLIC SHOWCASE</text>
+<g fill="#111927" stroke="#2f6f6b" stroke-width="1.2">
+<rect x="48" y="160" width="205" height="78" rx="10"/><rect x="280" y="160" width="205" height="78" rx="10"/><rect x="512" y="160" width="205" height="78" rx="10"/><rect x="744" y="160" width="205" height="78" rx="10"/><rect x="976" y="160" width="176" height="78" rx="10"/>
+</g>
+<g fill="#e8f0fa" font-size="14" text-anchor="middle">
+<text x="150" y="188"><tspan x="150">Evidence +</tspan><tspan x="150" dy="19">citation contracts</tspan></text><text x="382" y="188"><tspan x="382">Grounded answer</tspan><tspan x="382" dy="19">contracts</tspan></text><text x="614" y="188"><tspan x="614">Structured</tspan><tspan x="614" dy="19">summaries</tspan></text><text x="846" y="188"><tspan x="846">Human review</tspan><tspan x="846" dy="19">transitions</tspan></text><text x="1064" y="188"><tspan x="1064">Tests</tspan><tspan x="1064" dy="19">+ CI</tspan></text>
+</g>
+<text x="48" y="286" font-size="13" font-weight="700" fill="#b795ff">VERIFIED BROADER PRIVATE IMPLEMENTATION</text>
+<g fill="#111927" stroke="#554681" stroke-width="1.2">
+<rect x="48" y="306" width="340" height="270" rx="12"/><rect x="430" y="306" width="340" height="270" rx="12"/><rect x="812" y="306" width="340" height="270" rx="12"/>
+</g>
+<g fill="#f4f8ff" font-size="16" font-weight="700">
+<text x="68" y="340">Retrieval</text><text x="450" y="340">Generation &amp; review</text><text x="832" y="340">Evaluation &amp; tracing</text>
+</g>
+<g fill="#cbd7e6" font-size="14">
+<text x="68" y="376">• BM25 lexical retrieval</text><text x="68" y="406">• SentenceTransformer dense retrieval</text><text x="68" y="436">• PostgreSQL / pgvector</text><text x="68" y="466">• HNSW / IVFFlat indexing</text><text x="68" y="496">• query rewrite + metadata + rerank</text>
+<text x="450" y="376">• Redis retrieval caching</text><text x="450" y="406">• Bedrock-backed generation</text><text x="450" y="436">• Pydantic structured outputs</text><text x="450" y="466">• stable citation identity</text><text x="450" y="496">• human review + audit records</text>
+<text x="832" y="376">• Langfuse + OpenTelemetry</text><text x="832" y="406">• 1,000+ page corpus</text><text x="832" y="436">• 200 openFDA validation records</text><text x="832" y="466">• retrieval / ranking benchmarks</text><text x="832" y="496">• latency + token/cost traces</text>
+</g>
+<rect x="48" y="610" width="1104" height="54" rx="10" fill="#101827" stroke="#38527a"/>
+<text x="68" y="634" font-size="13" fill="#9fb0c8">MEASURED PRIVATE EVIDENCE</text>
+<text x="260" y="642" font-size="17" font-weight="700" fill="#f4f8ff">91.4% Recall@10 · 0.86 MRR · 0.89 NDCG</text>
+<text x="750" y="642" font-size="17" font-weight="700" fill="#f4f8ff">140 ms P50 · &lt;420 ms P95</text>
+</svg>
