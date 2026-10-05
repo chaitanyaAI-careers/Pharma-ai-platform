@@ -156,9 +156,9 @@ The public implementation intentionally treats approval and rejection as termina
 
 ---
 
-## Broader Platform Direction
+## Verified Broader Platform Implementation
 
-The complete project direction is larger than the current public showcase.
+The complete project is larger than the current public showcase. The broader implementation described below is maintained separately from this recruiter-safe repository.
 
 Conceptually, the platform is organized around:
 
@@ -182,7 +182,7 @@ flowchart TD
     J --> K["Traceability / Evaluation / Audit-Oriented Records"]
 ```
 
-This diagram represents the **broader platform architecture and engineering direction**, not the implementation surface of the current public repository.
+This diagram represents the **verified broader platform architecture**, not the implementation surface of the current public repository.
 
 ---
 
@@ -190,25 +190,26 @@ This diagram represents the **broader platform architecture and engineering dire
 
 ### PharmaRAG
 
-Target responsibility:
+Verified broader responsibility:
 
 > evidence-grounded question answering over prepared pharmaceutical, regulatory, SOP, and quality documents.
 
-Engineering areas include:
+The broader implementation includes:
 
-- document ingestion
-- chunking
-- embedding
-- retrieval
-- lexical / dense retrieval comparison
-- hybrid retrieval
-- metadata filtering
+- document preparation and version-aware metadata
+- dense retrieval with SentenceTransformer embeddings
+- BM25 lexical retrieval
+- PostgreSQL / pgvector hybrid retrieval
+- HNSW / IVFFlat indexing
+- query rewriting and metadata filtering
+- Redis retrieval caching
 - reranking
-- grounded answer construction
-- citations and excerpts
-- retrieval evaluation
+- grounded answer construction with stable citations
+- retrieval and ranking evaluation
+- Bedrock-backed generation with structured Pydantic outputs
+- human review and audit-oriented traceability
 
-These capabilities should only be described as publicly implemented when corresponding code is present in this repository.
+These capabilities are not claimed as code contained in the current public showcase unless corresponding implementation is directly inspectable here.
 
 ### PharmaSummarizer
 
@@ -404,62 +405,52 @@ It does **not** currently expose or claim:
 
 ---
 
-## Roadmap
+## Measured Engineering Evidence
 
-The broader flagship roadmap includes several engineering layers.
+The broader private implementation has been evaluated on a pharmaceutical/regulatory document corpus with the following verified results:
 
-### Document Intelligence
+- **1,000+ pages** in the evaluation corpus
+- **200 openFDA validation records**
+- **91.4% Recall@10**
+- **0.86 MRR**
+- **0.89 NDCG**
+- **140 ms P50 retrieval latency**
+- **<420 ms P95 end-to-end execution**
 
-- shared document parsing
-- version-aware document metadata
-- reusable chunk schema
-- structured extraction
-
-### Retrieval
-
-- dense retrieval
-- BM25 / lexical retrieval
-- hybrid retrieval
-- metadata filtering
-- cross-encoder reranking
-
-### Evaluation
-
-- larger golden evaluation datasets
-- Recall@K
-- Precision@K
-- MRR
-- NDCG
-- groundedness evaluation
-- citation-correctness evaluation
-- retrieval regression testing
-
-### Answer Reliability
-
-- structured answer contracts
-- citation verification
-- confidence-aware / fallback behavior
-- explicit source attribution
-
-### Governance and Review
-
-- review workflow expansion
-- audit-oriented event records
-- authorization controls
-- human-in-the-loop gates
-- traceability across document, answer, and reviewer activity
-
-### Platform Engineering
-
-- API layer where architecturally justified
-- durable persistence where justified
-- Docker / containerized deployment
-- integration and evaluation testing
-- observability appropriate to the final runtime
-
-Roadmap items are **not claimed as implemented** until corresponding evidence exists.
+The evaluation and latency figures above describe the broader implementation, not the minimal public contract-only showcase.
 
 ---
+
+## Verified Broader Technology Context
+
+The broader implementation includes:
+
+- BM25 lexical retrieval
+- SentenceTransformer dense retrieval
+- PostgreSQL / pgvector
+- HNSW / IVFFlat indexing
+- metadata filtering and reranking
+- Redis caching
+- AWS Bedrock-backed model integration
+- Pydantic structured outputs
+- Langfuse / OpenTelemetry tracing
+- human review and audit-oriented records
+
+The public repository intentionally keeps only the smaller deterministic contracts needed to demonstrate evidence identity, grounding, structured output, review state, and testability.
+
+---
+
+## Next Evidence Surface
+
+Future work should focus on strengthening reproducible evidence rather than re-labeling already implemented capabilities as roadmap items.
+
+Useful next evidence includes:
+
+- larger retrieval benchmark sets
+- additional citation-correctness and groundedness measurements
+- broader load and concurrency testing
+- explicit SLO / recovery measurements
+- additional public-safe implementation samples where proprietary boundaries allow
 
 ## Why This Project Matters
 
@@ -517,7 +508,7 @@ Related portfolio areas include:
 
 **Chaitanya Sai — Applied AI Engineer**
 
-Generative AI · LLM Applications · RAG · Agentic AI · AI Platform & Backend Engineering
+Generative AI · LLM Applications · Agentic AI · RAG · AI Platform & Backend · AI Product Engineering
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-111827?style=flat-square&logo=vercel&logoColor=white)](https://chaitanya-sai-portfolio.vercel.app)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/chaitanyaAI-careers)
